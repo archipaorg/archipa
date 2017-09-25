@@ -1,0 +1,56 @@
+{
+  "name": "@archipa/archipa-cli",
+  "version": "1.0.0",
+  "description": "A CLI for ICL files compilation",
+  "bin": "./dist/cli.js",
+  "preferGlobal": true,
+  "scripts": {
+    "pretest": "rm -rf ./dist/* && ./scripts/build.sh && tsc -p ./src",
+    "test": "./node_modules/mocha/bin/mocha --recursive ./tests",
+    "test:unit": "./node_modules/mocha/bin/mocha --recursive  ./tests/unit",
+    "test:int": "./node_modules/mocha/bin/mocha --recursive  ./tests/integration",
+    "test:acc": "./node_modules/mocha/bin/mocha --recursive  ./tests/acceptance",
+    "docs": "node ./dist/core/docBuilder",
+    "prepublish": "npm run docs"
+  },
+  "keywords": [
+    "archipa",
+    "icl"
+  ],
+  "directories": {
+    "man": "./man"
+  },
+  "author": "Mahieddine Cherif <mahied.cherif@gmail.com>",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "@archipa/icl": "^1.0.4",
+    "circular-json": "^0.3.3",
+    "download-git-repo": "^1.0.1",
+    "http": "0.0.0",
+    "indent-string": "^3.2.0",
+    "js-yaml": "^3.10.0",
+    "nopt": "^4.0.1",
+    "npmlog": "^4.1.2",
+    "recursive-readdir": "^2.2.1",
+    "rimraf": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/circular-json": "^0.1.31",
+    "@types/indent-string": "^3.0.0",
+    "@types/js-yaml": "^3.9.1",
+    "@types/mkdirp": "^0.5.1",
+    "@types/nopt": "^3.0.29",
+    "@types/recursive-readdir": "^1.2.29",
+    "@types/rimraf": "^2.0.2",
+    "glob": "^7.1.2",
+    "marked": "^0.3.6",
+    "marked-man": "^0.2.1",
+    "mkdirp": "^0.5.1",
+    "mocha": "^3.4.2",
+    "nock": "^9.0.14",
+    "rimraf": "^2.6.1"
+  },
+  "bugs": {
+    "url": "https://github.com/archipaorg/archipa-cli/issues"
+  }
+}

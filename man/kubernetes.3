@@ -1,0 +1,20 @@
+.TH "ARCHIPA\-KUBERNETES" "3" "September 2017" "" ""
+.SH "NAME"
+\fBarchipa-kubernetes\fR
+.SH SYNOPSIS
+.P
+bootstrap\.commands\.kubernetes(path, imports, searchIn)
+.SH DESCRIPTION
+.P
+Compile the ICL file located in the specified path and returns the compilation output
+which includes that AST, the generated JSON and all the aliases defined\.
+.P
+path:
+The path must be a \fBString\fP and must be a file using a relative or absolute path\.
+The command returns a promise\. The promise returns an Object\. this object
+contains the following fields :
+\fBaliases\fR those are the list of aliases defined across the different ICL files
+\fBast\fR this is the global AST 
+\fBoutput\fR this is the generated JSON object\.
+bootstrap\-isonline(1)—check if a database is online
+
