@@ -31,7 +31,7 @@ Otherwise we are still working on the specification that everyone could use once
 
 ## Install
 
-	npm install -g @archipaorg/archipa
+	npm install -g @archipa/archipa
 
 ## Usage 
 
