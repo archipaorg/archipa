@@ -51,6 +51,6 @@
     "rimraf": "^2.6.1"
   },
   "bugs": {
-    "url": "https://github.com/archipaorg/archipa-cli/issues"
+    "url": "https://github.com/archipaorg/archipa/issues"
   }
 }

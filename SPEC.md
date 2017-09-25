@@ -97,9 +97,15 @@ Contains the basic elements that every piece of software needs such as cpu, memo
 
 ## Network 
 
+// TODO 
+
 ### DNS 
 
-### Hostname :
+// TODO
+
+### Hostname
+
+// TODO
 
 ### LB
 Every App/Job contact another service through an LB, this can be a local LB provided by the orchestrator for example or an external one (ELB)
