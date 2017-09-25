@@ -29,6 +29,10 @@ For the moment, archipa can be used to compile your ICL files into JSON/YAML fil
 
 Otherwise we are still working on the specification that everyone could use once finished to express (if he wants to) his application infrastructure independently from the orchestrator he's using.
 
+## Install
+
+	npm install -g @archipaorg/archipa
+
 ## Usage 
 
 	archipa <orchestrator> --json|--yaml 
@@ -45,4 +49,4 @@ We love contributions! There's lots to do, so why not chat with us about what yo
 
 Documentation, bug reports, pull requests, and all other contributions are welcome!
 
-To suggest a feature or report a bug: https://github.com/archipaorg/archipa-cli/issues   
+To suggest a feature or report a bug: https://github.com/archipaorg/archipa/issues   
