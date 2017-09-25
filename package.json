@@ -1,6 +1,6 @@
 {
   "name": "@archipa/archipa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI for ICL files compilation",
   "bin": "./dist/cli.js",
   "preferGlobal": true,
