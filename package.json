@@ -1,15 +1,15 @@
 {
   "name": "@archipa/archipa",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CLI for ICL files compilation",
   "bin": "./dist/cli.js",
   "preferGlobal": true,
   "scripts": {
-    "pretest": "rm -rf ./dist/* && ./scripts/build.sh && tsc -p ./src",
-    "test": "./node_modules/mocha/bin/mocha --recursive ./tests",
-    "test:unit": "./node_modules/mocha/bin/mocha --recursive  ./tests/unit",
-    "test:int": "./node_modules/mocha/bin/mocha --recursive  ./tests/integration",
-    "test:acc": "./node_modules/mocha/bin/mocha --recursive  ./tests/acceptance",
+    "pretest": "rm -rf ./dist/* && ./scripts/build.sh && tsc -p ./src && tsc -p .",
+    "test": "mocha --recursive ./test",
+    "test:unit": "mocha --recursive  ./test/unit",
+    "test:int": "mocha --recursive  ./test/integration",
+    "test:acc": "mocha --recursive  ./test/acceptance",
     "docs": "node ./dist/core/docBuilder",
     "prepublish": "npm run docs"
   },
@@ -21,9 +21,13 @@
     "man": "./man"
   },
   "author": "Mahieddine Cherif <mahied.cherif@gmail.com>",
+  "contributors": [
+    "Mahieddine CHERIF",
+    "Farah MAAMAR"
+  ],
   "license": "MPL-2.0",
   "dependencies": {
-    "@archipa/icl": "^1.0.4",
+    "@archipa/icl": "^1.0.16",
     "circular-json": "^0.3.3",
     "download-git-repo": "^1.0.1",
     "http": "0.0.0",
@@ -40,17 +44,20 @@
     "@types/js-yaml": "^3.9.1",
     "@types/mkdirp": "^0.5.1",
     "@types/nopt": "^3.0.29",
-    "@types/recursive-readdir": "^1.2.29",
+    "@types/recursive-readdir": "^1.2.30",
     "@types/rimraf": "^2.0.2",
     "glob": "^7.1.2",
     "marked": "^0.3.6",
     "marked-man": "^0.2.1",
     "mkdirp": "^0.5.1",
     "mocha": "^3.4.2",
-    "nock": "^9.0.14",
+    "nock": "^9.0.21",
     "rimraf": "^2.6.1"
   },
   "bugs": {
     "url": "https://github.com/archipaorg/archipa/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

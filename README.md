@@ -1,6 +1,8 @@
  
 # Archipa
-
+[![Build Status](https://travis-ci.org/archipaorg/archipa.svg?branch=master)](https://travis-ci.org/archipaorg/archipa)
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+[![npm](https://img.shields.io/npm/v/npm.svg)]()
 ## Goal 
 One of the biggest issues that Docker has resolved is without any doubt portability, Docker made our apps easily portable, in fact thanks to docker containers everyone can now build, ship and run it's app anywhere. However when Docker containers became popular we realized that we needed an automated way to manage those containers inside a Docker cluster and that's why tools such as Docker Swarm, Kubernetes, Rancher... were developed, container orchestrators made our life easier and help us manage our services so easily that we even forget sometimes the containers behind the scene. The problem is that when you describe your service in a YAML file, this configuration file is tied to the orchestrator that you are using so even if everyone is using the same technology under the hood, we don't have a common language that enables everyone to describe it's application infrastructure independently from any physical resources and/or orchestrator thus depriving the community from sharing common stacks that can be enhanced and used by everyone. 
 
