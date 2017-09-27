@@ -10,7 +10,7 @@
     "test:unit": "mocha --recursive  ./test/unit",
     "test:int": "mocha --recursive  ./test/integration",
     "test:acc": "mocha --recursive  ./test/acceptance",
-    "docs": "./scripts/build.sh && tsc -p ./src && node ./dist/core/docBuilder",
+    "docs": "tsc -p ./src && ./scripts/build.sh && node ./dist/core/docBuilder",
     "prepublish": "npm run docs"
   },
   "keywords": [
