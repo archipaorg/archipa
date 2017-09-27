@@ -41,7 +41,6 @@
   },
   "devDependencies": {
     "@types/chai": "^4.0.4",
-    "@types/circular-json": "^0.1.31",
     "@types/indent-string": "^3.0.0",
     "@types/js-yaml": "^3.9.1",
     "@types/mkdirp": "^0.5.1",
@@ -54,8 +53,7 @@
     "marked-man": "^0.2.1",
     "mkdirp": "^0.5.1",
     "mocha": "^3.5.3",
-    "nock": "^9.0.21",
-    "rimraf": "^2.6.1"
+    "nock": "^9.0.21"
   },
   "bugs": {
     "url": "https://github.com/archipaorg/archipa/issues"

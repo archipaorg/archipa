@@ -11,8 +11,8 @@ import {Bootstrap} from '../../bootstrap';
 
 import * as Rimraf from  'rimraf';
 import * as Yaml from 'js-yaml';
-import * as JsonCircular from 'circular-json';
-
+//import * as JsonCircular from 'circular-json';
+const JsonCircular = require('circular-json');
 const download_git_repo = require('download-git-repo');
 
 /**
